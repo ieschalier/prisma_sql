@@ -95,7 +95,8 @@ const server = new GraphQLServer({
     ...req,
     prisma: new Prisma({
       typeDefs: 'src/generated/prisma.graphql',
-      endpoint: 'http://localhost:4466',
+      endpoint:
+        'http://prism-Publi-AVG7U0PI3H6C-909029745.eu-west-1.elb.amazonaws.com',
     }),
   }),
 })

@@ -1,4 +1,4 @@
-endpoint: http://localhost:4466
+endpoint: http://prism-Publi-AVG7U0PI3H6C-909029745.eu-west-1.elb.amazonaws.com
 datamodel: datamodel.graphql
 hooks:
   post-deploy:
