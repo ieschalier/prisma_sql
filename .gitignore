@@ -1,1 +1,4 @@
 node_modules/
+.gitsecret/keys/random_seed
+
+envs/.dev.env 
