@@ -1,4 +1,5 @@
 endpoint: ${env:PRISMA_ENDPOINT, self:custom.PRISMA_ENDPOINT}
+secret: ${env:PRISMA_SECRET}
 datamodel: datamodel.graphql
 hooks:
   post-deploy:

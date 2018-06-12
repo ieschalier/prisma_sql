@@ -12,6 +12,7 @@
     "start:local": "sh -ac '. ./envs/.env && yarn start'",
     "prisma:local": "cd prisma && sh -ac '. ../envs/.env && prisma deploy'",
     "prisma:dev": "cd prisma && sh -ac '. ../envs/.dev.env && prisma deploy'",
-    "now:dev": "now --dotenv=./envs/.dev.env --public"
+    "now:dev": "now --dotenv=./envs/.dev.env --public",
+    "prisma:token": "cd prisma && sh -ac '. ../envs/.env && prisma token'"
   }
 }
