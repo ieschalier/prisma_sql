@@ -87,7 +87,7 @@ const resolvers = {
     },
   },
 }
-
+console.log(process.env.PRISMA_ENDPOINT)
 const server = new GraphQLServer({
   typeDefs: 'src/schema.graphql',
   resolvers,
@@ -95,8 +95,7 @@ const server = new GraphQLServer({
     ...req,
     prisma: new Prisma({
       typeDefs: 'src/generated/prisma.graphql',
-      endpoint:
-        'http://prism-Publi-AVG7U0PI3H6C-909029745.eu-west-1.elb.amazonaws.com',
+      endpoint: process.env.PRISMA_ENDPOINT || 'http://localhost:4466',
     }),
   }),
 })

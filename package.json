@@ -8,6 +8,10 @@
     "prisma-binding": "^2.0.2"
   },
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "start:local": "sh -ac '. ./envs/.env && yarn start'",
+    "prisma:local": "cd prisma && sh -ac '. ../envs/.env && prisma deploy'",
+    "prisma:dev": "cd prisma && sh -ac '. ../envs/.dev.env && prisma deploy'",
+    "now:dev": "now --dotenv=./envs/.dev.env --public"
   }
 }
